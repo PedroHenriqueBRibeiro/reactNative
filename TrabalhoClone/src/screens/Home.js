@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import image from '../../assets/pictures/backgroundFoto2.png';
-// import imageGoogle from './assets/pictures/google.png';
+import imageGoogle from '../../assets/pictures/google.png';
+import imageFacebook from '../../assets/pictures/facebook.png';
 
 export default function Home() {
   return (
@@ -21,12 +22,13 @@ export default function Home() {
         <Text style={styles.ouText}>OU</Text>
 
         <TouchableOpacity style={styles.button2}>
-          {/* <Image style={styles.icon} source={imageGoogle} /> */}
+          <Image style={styles.icon} source={imageGoogle} />
           <Text style={styles.buttonText2}>Continue com Google</Text>
         </TouchableOpacity>
 
 
         <TouchableOpacity style={styles.button2}>
+          <Image style={styles.icon} source={imageFacebook} />
           <Text style={styles.buttonText2}>Continue com Facebook</Text>
         </TouchableOpacity>
       </View>
@@ -78,6 +80,7 @@ const styles = StyleSheet.create({
     width: '96%',
     borderWidth: 2,
     borderColor: 'rgba(255, 255, 255, 0.3)',
+    flexDirection: 'row',
     alignItems: 'center',
 
   },
@@ -89,8 +92,9 @@ const styles = StyleSheet.create({
 
   buttonText2: {
     color: 'white',
-    fontSize: 11,
+    fontSize: 10,
     fontWeight: 'bold',
+    marginHorizontal: 32,
     
   },
 
@@ -101,12 +105,12 @@ const styles = StyleSheet.create({
     fontWeight: '900'
   },
 
-  // icon: {
-  //   width: 10,
-  //   height: 10,
+  icon: {
+    width: 15,
+    height: 15,
 
 
-  // }
+  }
 
 
 });

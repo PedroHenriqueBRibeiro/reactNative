@@ -1,11 +1,12 @@
-import {createStackNavigator} from '@react-navigation/stack'
-import Home from '../screens/Home';
+import { NavigationContainer } from '@react-navigation/native';
+import Stack from './Stack.routes';
 
-const {Navigator, Screen} = createStackNavigator();
 export default function Rotas() {
   return(
-    <Navigator>
-      <Screen name='home' component={Home}/>
-    </Navigator>
+  <NavigationContainer>
+    <Stack />
+  </NavigationContainer>
+      
+  
   );
 }

@@ -1,33 +1,35 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, Button } from 'react-native';
 import image from '../../assets/pictures/backgroundFoto2.png';
 import imageGoogle from '../../assets/pictures/google.png';
 import imageFacebook from '../../assets/pictures/facebook.png';
 
-export default function Home() {
+export default function Home({navigation}) {
+
+
   return (
     <View style={styles.container}>
       <Image style={styles.imagem} source={image} />
       <View style={styles.overlay}>
 
-        <TouchableOpacity>
+        <View >
           <Text style={styles.criarConta}>Crie a sua conta no</Text>
-        </TouchableOpacity>
+        </View>
 
         
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('NovaConta')}>
           <Text style={styles.buttonText}>Inscreva-se por Email</Text>
         </TouchableOpacity>
 
         <Text style={styles.ouText}>OU</Text>
 
-        <TouchableOpacity style={styles.button2}>
+        <TouchableOpacity style={styles.button2} onPress={() => navigation.navigate('EmailScreen')}>
           <Image style={styles.icon} source={imageGoogle} />
           <Text style={styles.buttonText2}>Continue com Google</Text>
         </TouchableOpacity>
 
 
-        <TouchableOpacity style={styles.button2}>
+        <TouchableOpacity style={styles.button2} onPress={() => navigation.navigate('EmailScreen')}>
           <Image style={styles.icon} source={imageFacebook} />
           <Text style={styles.buttonText2}>Continue com Facebook</Text>
         </TouchableOpacity>
@@ -55,12 +57,12 @@ const styles = StyleSheet.create({
   },
   ouText: {
     color: 'white',
-    fontSize: 12,
+    fontSize: 10,
     fontWeight: 'bold',
     top: 130,
   },
   button: {
-    backgroundColor: '#7cfc00',
+    backgroundColor: '#A4eA4f',
     paddingVertical: 15,
     paddingHorizontal: 40,
     borderRadius: 5,
@@ -87,7 +89,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontSize: 18,
-    fontWeight: 'bold',
+    fontWeight: '950',
   },
 
   buttonText2: {
@@ -110,7 +112,7 @@ const styles = StyleSheet.create({
     height: 15,
 
 
-  }
+  },
 
 
 });

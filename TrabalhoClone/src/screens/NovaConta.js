@@ -68,7 +68,7 @@ export default function NovaConta({ navigation }) {
             </View>
 
             <TouchableOpacity>
-                <Text style={styles.esqueceuText}>Esqueceu/Redefinir Senha?</Text>
+                <Text style={styles.esqueceuText}>Esqueceu / Redefinir Senha?</Text>
             </TouchableOpacity>
 
 
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
         height: 45,
         backgroundColor: '#808080',
         paddingVertical: 15,
-        paddingHorizontal: 30,
+        paddingHorizontal: 70,
         borderRadius: 5,
         marginVertical: 10,
         borderWidth: 2,
@@ -114,11 +114,10 @@ const styles = StyleSheet.create({
     buttonText2: {
         color: 'white',
         fontSize: 10,
-        fontWeight: 'bold',
         marginHorizontal: 32, 
     },
     button3: {
-        bottom: 50,
+        bottom: 200,
         height: 40,
         backgroundColor: '#808080',
         paddingHorizontal: 30,
@@ -128,12 +127,13 @@ const styles = StyleSheet.create({
         borderColor: 'rgba(255, 255, 255, 0.3)',
         flexDirection: 'row',
         alignItems: 'center',
+        width: '82%',
 
     },
     input2: {
         height: 36,
         paddingVertical: 1,
-        width: '90%',
+        
         paddingHorizontal: 0,
         backgroundColor: 'gray',
         fontSize: 10,
@@ -146,36 +146,38 @@ const styles = StyleSheet.create({
     },
     continueButton: {
         backgroundColor: '#A4eA4f',
-        paddingVertical: 5,
+        paddingVertical: 8,
         paddingHorizontal: 50,
-        borderRadius: 5,
+        borderRadius: 10,
         marginVertical: 10,
         borderWidth: 3,
-        borderColor: 'rgba(255, 255, 255, 0.3)',
+        borderColor: '#A4FF11',
         marginBottom: 100,
-        bottom: 28,
+        bottom: 160,
+        width: '84%',
 
     },
     continueButtonText: {
         color: 'white',
         fontSize: 18,
-        fontWeight: '950',
+        fontWeight: '900',
         paddingVertical: 5,
         paddingHorizontal: 50,
+        textAlign: 'center',
     },
     ouText: {
         textAlign: 'center',
         color: 'white',
         fontSize: 10,
         fontWeight: 'bold',
-        top: 10,
+        top: 20,
     },
     esqueceuText: {
         textAlign: 'center',
         color: 'white',
         fontSize: 10,
         fontWeight: 'bold',
-        bottom: 40,
+        bottom: 180,
     },
     
 });

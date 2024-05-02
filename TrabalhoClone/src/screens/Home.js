@@ -62,14 +62,15 @@ const styles = StyleSheet.create({
     top: 130,
   },
   button: {
+    width: 350,
     backgroundColor: '#A4eA4f',
     paddingVertical: 15,
     paddingHorizontal: 40,
-    borderRadius: 5,
+    borderRadius: 10,
     marginVertical: 10,
     top: 130,
     borderWidth: 3,
-    borderColor: 'rgba(255, 255, 255, 0.3)',
+    borderColor: '#A4FF11',
   },
 
   button2: {
@@ -79,7 +80,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginVertical: 10,
     top: 130,
-    width: '96%',
+    width: 340,
     borderWidth: 2,
     borderColor: 'rgba(255, 255, 255, 0.3)',
     flexDirection: 'row',
@@ -87,21 +88,22 @@ const styles = StyleSheet.create({
 
   },
   buttonText: {
+    textAlign: 'center',
     color: 'white',
     fontSize: 18,
-    fontWeight: '950',
+    fontWeight: '900',
   },
 
   buttonText2: {
     color: 'white',
     fontSize: 10,
     fontWeight: 'bold',
-    marginHorizontal: 32,
+    marginHorizontal: 70,
     
   },
 
   criarConta: {
-    bottom: 40,
+    bottom: 80,
     color: 'white',
     fontSize: 30,
     fontWeight: '900'

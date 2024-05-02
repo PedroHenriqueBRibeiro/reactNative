@@ -53,13 +53,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.5)',
   },
   title: {
-
-    fontSize: 20,
+    fontSize: 30,
     marginBottom: 20,
-    fontWeight: 950,
+    fontWeight: '900',
     color: 'white',
     textAlign: 'center',
-
   },
   input: {
     width: '80%',
@@ -71,22 +69,24 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   buttonContainer: {
+    width: '82%',
     backgroundColor: '#A4eA4f',
-    borderRadius: 5,
+    borderRadius: 10,
     marginVertical: 10,
     top: 0,
     borderWidth: 3,
-    borderColor: 'rgba(255, 255, 255, 0.3)',
+    borderColor: '#A4FF11',
   },
   imagem: {
     position: 'absolute',
-    width: 400, 
-    height: 700,
+    width: '100%', 
+    height: '100%',
   },
   textButton: {
+    textAlign: 'center',
     color: 'white',
     fontSize: 18,
-    fontWeight: '950',
+    fontWeight: '900',
     paddingVertical: 5,
     paddingHorizontal: 40,
     

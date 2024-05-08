@@ -1,30 +1,22 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import 'react-native-gesture-handler';
+import { StatusBar } from 'expo-status-bar';
+import { Button, StyleSheet, Text, View } from 'react-native';
+import { getAllTasks, storeTask } from './src/services/todoServices';
 import Routes from './src/routes';
+import { NavigationContainer } from '@react-navigation/native';
+import MyContextProvider from './src/context/my-context';
+import ThemeContextProvider from './src/context/theme-context';
 
 export default function App() {
   return (
-    // <View style={styles.container}>
-    //   <Text>TODO LIST</Text>
-    //   <Button
-    //     title="POST - StoreTask"
-    //     onPress={() => storeTask({
-    //       title: "Estudar React Native",
-    //       description: "React Navigation, Async, Contexto...",
-    //       priority: "alta",
-    //     })}
-    //     />
-    //     <Text> </Text>
-    //   <Button
-    //     title="GET - getAllTasks"
-    //     onPress={() => getAllTasks({
-    //     })}
-    //     />
-    // </View>
-    <NavigationContainer>
-      <Routes />
-    </NavigationContainer>
-  );
+    <ThemeContextProvider>
+      <MyContextProvider>
+        <NavigationContainer>
+          <Routes/>    
+        </NavigationContainer>
+      </MyContextProvider>
+    </ThemeContextProvider>
+  )
 }
 
 const styles = StyleSheet.create({

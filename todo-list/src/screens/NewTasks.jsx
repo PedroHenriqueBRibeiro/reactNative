@@ -39,7 +39,7 @@ export default function NewTask() {
 
             <Button
                 title="Criar usuário"
-                onPress={() => createUser("teste@teste.com", 'senha@123')}
+                onPress={() => createUser('teste@teste.com', 'senha@123')}
             />
 
         </View>
